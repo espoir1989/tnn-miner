@@ -52,10 +52,12 @@ jobs:
         clang++ --version
     - name: 'Compile Tnn-miner'
       run: |
+        ls -l
         mkdir build
         cd build
         pwd
-        cmake ../build
+        ls -l
+        cmake ..
         make -j$(nproc)
         tar -cvf ../tnn-miner.tar Tnn-miner
     - name: 'Archive tnn-miner.tar.gz'
