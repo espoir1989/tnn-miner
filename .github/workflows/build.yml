@@ -55,7 +55,7 @@ jobs:
         mkdir build
         cd build
         pwd
-        cmake ..
+        cmake ../build
         make -j$(nproc)
         tar -cvf ../tnn-miner.tar Tnn-miner
     - name: 'Archive tnn-miner.tar.gz'
