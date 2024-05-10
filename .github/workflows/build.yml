@@ -57,7 +57,7 @@ jobs:
         cd build
         pwd
         ls -l
-        cmake ..
+        cmake /home/runner/work/tnn-miner/tnn-miner /home/runner/work/tnn-miner/tnn-miner/build
         make -j$(nproc)
         tar -cvf ../tnn-miner.tar Tnn-miner
     - name: 'Archive tnn-miner.tar.gz'
